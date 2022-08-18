@@ -73,46 +73,82 @@
 				<span class="material-symbols-outlined">work</span>
 				<span class="freeteam">Create free Team</span></div>
 		</div>
-		<div class="profile">
-			<div class="profopt"></div>
-			<img
-				src="assets/pfp.png"
-				alt="headerprofile"
-				width="128"
-				height="128"
-			/>
-			<div class="firstline">
-				<span class="name">Jon Skeet</span>
-				<span class="material-symbols-outlined">cake</span>
-				<span class="member">Member for 13 years</span>
-				<span class="material-symbols-outlined">schedule</span>
-				<span class="seen">Last seen today</span>
+		<!-- list head -->
+            <div class="listhead">
+                <div class="listsetting">
+                    <div class="listsettingleft">
+                        <img src="Assets/pfp.png" alt="Logo" style="width:128px; "  >   
+                    
+                    </div>
+                    <div class="box">
+                        <h3 class="name">Jon Skeet </h3>
+                            <div class="namebodyopt" >
+                                <span class="material-symbols-outlined">cake</span>
+                                <h3 class="cakedes">Member for 13 years</h3>
+                                <span class="material-symbols-outlined">schedule</span>
+                                <h3 class="cakedes">Last seen this week</h3>
+                            </div>
+                            <div class="locbodyopt" >
+                                <img src="Assets/twitter.png" alt="Logo" style="width:20px; height: 20px; margin-top: 10px; margin-left: 5px;"  >
+                                <img src="Assets/git.png" alt="Logo" style="width:16px; height: 16px; margin-top: 10px; margin-left: 5px; "  > 
+                                <img src="Assets/link.png" alt="Logo" style="width:16px; height: 16px; margin-top: 10px; margin-left: 4px; "  >
+                                <h3 class="cakedes">csharpindepth.com</h3>   
+
+
+                                <span class="material-symbols-outlined">location_on</span>
+                                <h3 class="cakedes">Reading,United Kingdom</h3>
+                            </div>
+                    </div>
+                   
+
+                    <div class="listsettingright">
+
+                    </div>
+                </div>
+                <div class="listsection" >
+                    <div class="section section__selected">
+                        <button class="profile">
+                            <h3>Profile</h3>
+                        </button>
+                    </div>
+                    <div class="section">
+                        <button class="about">
+                            <h3>Activity</h3>
+                        </button>
+                    </div>
+                </div>
+			<h2 style="margin-top:20px">Stats<span class="abspace"></span>About</h2>
+		<div class="statuser">
+                <div class="stats">
+				<span class="numbers">1,350,175<span class="space"></span>366.2m</span>
+				<span class="stattext">reputation<span class="space"></span>reached</span>
+				<span class="numbers">35,481<span class="space"></span>51</span>
+				<span class="stattext">answers<span class="space"></span>questions</span>			
+				<span class="material-icons" style="margin-left:15px; margin-bottom:10px;">emoji_events</span>
+				<span class="stattext">top <b>0.01%</b> overall</span>
 			</div>
-			<div class="secondline">
-				<span class="material-symbols-outlined">link</span>
-				<span class="website">csharpindepth.com</span>
-				<span class="material-symbols-outlined">location_on</span>
-				<span class="location">Reading, United Kingdom</span>
+
+			<div class="aboutuser">
+				<p class="info">Author of <a href="https://www.manning.com/books/c-sharp-in-depth-fourth-edition?a_aid=jonskeet&a_bid=66d590c3">C# in depth</a>.</p>
+				<p class="info">Currently a software engineer at Google, London.</p>
+				<p class="info">Usually a Microsoft MVP (C#, 2003-2010, 2011-)</p>
+				<p class="info"></p>
+				<p class="info">Sites:</p>
+				<p class="info"></p>
+				<ul>
+  					<li class="info"><a href="https://www.manning.com/books/c-sharp-in-depth-fourth-edition?a_aid=jonskeet&a_bid=66d590c3">C# in depth</a></li>
+  					<li class="info"><a href="https://codeblog.jonskeet.uk/">Coding blog</a></li>
+  					<li class="info"><a href="http://jonskeet.uk/csharp">C# articles</a></li>
+  					<li class="info"><a href="http://twitter.com/jonskeet">Twitter updates(@jonskeet)</a></li>
+				</ul>
+				<p class="info">Email: skeet@pobox.com (but please read <a href="https://codeblog.jonskeet.uk/2012/08/22/stack-overflow-and-personal-emails/">my blogpost on Stack Overflow-related emails</a> first)</p>
 			</div>
 		</div>
-		<div class="proact proact__active">
-			<span class="probutton">Profile</span>
-			<span class="activity">Activity</span>
-		<div class="stats">
-			<h2>Stats</h2>
-			<span class="numbers">1,350,175</span>
-			<span class="numbers">366.2m</span>
-			<span class="stattext">reputation</span>
-			<span class="stattext">reached</span>
-			<span class="numbers">35,481</span>
-			<span class="numbers">51</span>
-			<span class="stattext">answers</span>
-			<span class="stattext">questions</span>
-			<span class="material-icons">emoji_events</span>
-			<span class="stattext">top <b>0.01%</b> overall</span>
-		</div>
+
+
+			<h2 style="margin-top:20px">Communities<span class="commspace"></span>Badge</h2>
+		<div class="commbadge">
 		<div class="community">
-			<h2>Communities</h2>
 			<img
 				src="https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico?v=ec617d715196"
 				alt="stackicon"
@@ -120,8 +156,14 @@
 			<span class="commopt">Stack Overflow</span>
 		</div>
 		<div class="badges">
-			<h2>Badges</h2>
-			<span class="commopt">Stack Overflow</span>
+			<div class="gold">
+				<span class="golditem">
+			</div>
+			<div class="silver">
+			</div>
+			<div class="bronze">
+			</div>
+		</div>
 		</div>
 	</div>
 </body>
