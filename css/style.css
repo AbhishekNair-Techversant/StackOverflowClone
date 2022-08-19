@@ -155,8 +155,10 @@
   color: #818181;
 }
 
-.sidebarOption .material-icons {
+.sidebarOption .material-symbols-outlined {
   padding: 5px;
+  padding-left:0;
+  font-size: 20px;
 }
 
 
@@ -222,7 +224,7 @@
 }
 
 body{
-    overflow-y: hidden;
+    overflow-x: hidden;
     
 }
 
@@ -444,6 +446,8 @@ body{
 
 
 
+
+
 .statuser{
   display:flex;
 }
@@ -475,11 +479,39 @@ a:visited{
 }
 
 
-
 .badges{
-   width: 150px;
-    padding-right: 100px;
-    margin-right: 480px;
+  display:flex;
+}
+
+.gold{
+   display:flex;
+   width: 200px;
+    padding-right: 10px;
+    padding-bottom: 40px;
+    margin-right: 20px;
+    margin-left:-430px;
+  border: 1px solid black;
+  border-radius:5px;
+	
+}
+
+
+
+.silver{
+   display:flex;
+   width: 200px;
+    padding-right: 10px;
+    margin-right: 20px;
+  border: 1px solid black;
+  border-radius:5px;
+	
+}
+
+.bronze{
+   display:flex;
+   width: 200px;
+    padding-right: 10px;
+    margin-right: 20px;
   border: 1px solid black;
   border-radius:5px;
 	
@@ -493,3 +525,19 @@ a:visited{
 .commspace{
  padding-right:180px;
 }
+
+
+
+.badgespace{
+    padding-right:10px;
+}
+
+.badgedet{
+	padding-top:30px;
+	margin-left:-30px;
+	font-size:15px;
+}
+
+
+
+
