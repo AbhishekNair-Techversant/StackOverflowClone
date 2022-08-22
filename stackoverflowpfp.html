@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>User Jon Skeet - Stack Overflow</title>
+    <link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico?v=ec617d715196">
+</head >
+    <body style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+        <div class="header">
+            <div class="headerleft">
+                <img src="assets/logo.png" alt="Logo" style="width:150px;" >
+                <button class="about">
+                    products
+                </button>      
+            </div>
+            <div class="headermiddle">
+                <span class="material-icons" style="background-color: white; padding: 1px; padding-right: 5px; padding-left: 5px;">search</span>
+		    <input type="text" placeholder="Search..."/>
 
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>User Jon Skeet - Stack Overflow</title>
-	<link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico?v=ec617d715196">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-	<link rel="stylesheet" href="css/style.css"/>
-
-</head>
-<body style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
-	<!-- Header Starts -->
-	<div class="header">
-		<div class="header__top"></div>
-		<div class="header__rest" style="padding-left: 150px; padding-right: 150px;">
-			<img
-				src="assets/logo.png"
-				alt="logo"
-				style="width: 150px;height: auto;"
-			/>
-			<span class="prod">Products</span>
-			<div class="header__search">
-				<span class="material-icons" style="background-color: white; padding: 1px; padding-right: 5px; padding-left: 5px;">search</span>
-				<input type="text" placeholder="Search..."/>
-			</div>
-			<div class="pfpage">
+            </div>
+            
+            <div class="headerright">
+                <div class="pfpage">
 				<img
 					src="assets/pfp.png"
 					alt="headerprofile"
@@ -40,166 +39,376 @@
 			<span class="material-icons">help</span>
 			<span class="material-icons">table_rows</span>
 		</div>
-	</div>
 
-	<!--Header Ends-->
+            </div>
 
-	<!--Main Body Starts-->
-	<div class="main__body">
-		<div class="sidebar">
-			<div class="sidebarOption">
-				<span class="home">Home</span></div>
-			<div class="sidebarOption">
-				<span class="public">PUBLIC</span></div>
-			<div class="sidebarOption">
-				<span class="material-symbols-outlined">public</span>			
-				<span class="questions"> Questions</span></div>
-			<div class="sidebarOption">
-				<span class="tags">Tags</span></div>
-			<div class="sidebarOption sidebarOption__active">
-				<span class="users">Users</span></div>
-			<div class="sidebarOption">
-				<span class="companies">Companies</span></div>
-			<div class="sidebarOption">			
-				<span class="collectives">Collectives</span>
-				<span class="material-symbols-outlined">info</span></div>
-			<div class="sidebarOption">
-				<span class="material-symbols-outlined">stars</span>
-				<span class="expcollective">Explore Collectives</span></div>
-			<div class="sidebarOption">
-				<span class="teams">Teams</span>
-				<span class="material-symbols-outlined">info</span></div>
-			<div class="sidebarOption">
-				<span class="material-symbols-outlined">work</span>
-				<span class="freeteam">Create free Team</span></div>
-		</div>
-		<!-- list head -->
-            <div class="listhead">
-                <div class="listsetting">
-                    <div class="listsettingleft">
-                        <img src="assets/pfp.jpeg" alt="Logo" style="width:140px; height:140px;"  >   
+        </div>
+            <div class="bigbody">
+                <div class="sidebody" >
+                    <h3 class="home">Home</h3>
+                    <h3 class="public">Public</h3>
                     
+                    <div class="sidebodyopt">
+                        <span class="material-symbols-outlined">public</span>
+                        <h3 class="questions" >Questions</h3>
                     </div>
-                    <div class="box">
-                        <h3 class="name">Jon Skeet </h3>
-                            <div class="namebodyopt" >
-                                <span class="material-symbols-outlined">cake</span>
-                                <h3 class="cakedes">Member for 13 years</h3>
-                                <span class="material-symbols-outlined">schedule</span>
-                                <h3 class="cakedes">Last seen this week</h3>
+                    <div>
+                        <h3 class="tags">Tags</h3>
+                    </div>
+                    <div>
+                        <h3 class="users" style="border-right: 3px solid #f48225;" >Users</h3>
+                    </div>
+                    <div>
+                        <h3 class="companies">Companies</h3>
+                    </div>
+                    <div class="sidebodyopt">
+                        <h3 class="collectives">COLLECTIVES</h3>
+                    </div>
+                    <div class="sidebodyopt">
+                        <span class="material-symbols-outlined" style="color: #f48225;">stars</span>
+                        <h3 class="explore">Explore Collectives</h3>
+                    </div>
+                    <div class="sidebodyopt">
+                        <h3 >TEAMS</h3>
+                    </div>
+                        <div class="teams">
+                            <div class="teamsbd">
+                                <p><b>Stack Overflow for Teams</b>  - start collaborating and sharing <br> orgsnization knowledge.</p>
+                            
+                                <img src="assets/teams.jpg" alt="logo">
+                                <div class="teamsbt">
+                                    <h5>create a free team</h5>
+                                </div>
+                                <div class="side_bar_option7">
+                                    <h6>why teams?</h6>
+                                </div>
                             </div>
-                            <div class="locbodyopt" >
-                                <img src="assets/twitter.png" alt="Logo" style="width:20px; height: 20px; margin-top: 10px; margin-left: 5px;"  >
-                                <img src="assets/git.png" alt="Logo" style="width:16px; height: 16px; margin-top: 10px; margin-left: 5px; "  > 
-                                <img src="assets/link.png" alt="Logo" style="width:16px; height: 16px; margin-top: 10px; margin-left: 4px; "  >
-                                <h3 class="cakedes">csharpindepth.com</h3>   
+                        </div>
+                </div>    
+                <!-- list head -->
+                <div class="listhead">
+                    <div class="listsetting">
+                        <div class="listsettingleft">
+                            <img src="Assets/pfp.jpeg" alt="Logo" style="width:140px "  >   
+                        
+                        </div>
+                        <div class="box">
+                            <h3 class="name">Jon Skeet </h3>
+                                <div class="namebodyopt" >
+                                    <span class="material-symbols-outlined">cake</span>
+                                    <h3 class="cakedes">Member for 13 years</h3>
+                                    <span class="material-symbols-outlined">schedule</span>
+                                    <h3 class="cakedes">Last seen this week</h3>
+                                </div>
+                                <div class="locbodyopt" >
+                                    <img src="Assets/twitter.png" alt="Logo" style="width:16px; height: 16px; margin-top: 5px; margin-left: 5px;"  >
+                                    <img src="Assets/git2.png" alt="Logo" style="width:25px; height: 25px; margin-top: 1px; margin-left: 5px; "  > 
+                                    <img src="Assets/link.png" alt="Logo" style="width:16px; height: 16px; margin-top: 5px; margin-left: 4px; "  >
+                                    <h3 class="cakedes">csharpindepth.com</h3>   
 
 
-                                <span class="material-symbols-outlined">location_on</span>
-                                <h3 class="cakedes">Reading,United Kingdom</h3>
-                            </div>
+                                    <span class="material-symbols-outlined">location_on</span>
+                                    <h3 class="cakedes">Reading,UK</h3>
+                                </div>
+                        </div>
+
+                    
+
+                        <div class="listsettingright">
+
+                        </div>
                     </div>
-                   
+                    <div class="listsection" >
+                        <div class="section section__selected">
+                            <button class="profile">
+                                Profile
+                            </button>
+                        </div>
+                        <div class="section">
+                            <button class="about">
+                                Activity
+                            </button>
+                        </div>
+                    </div>
+                    <div class="stats">
+                    <h3 style="margin-left: 400px;  font-size: large; font-weight: 100;margin-left: 12px; margin-top: 15px" >Stats</h3>
+                    <h3 style="margin-left: 400px;  font-size: large; font-weight: 100;margin-left: 260px; margin-top: 15px">About</h3>
+                    </div>
+                    <div class="statbox">
+                        <h3 style="margin-top: 15px; margin-left: 12px;font-size: large; " >1,350,136 </h3>
+                        <h3 style="margin-left:55px; margin-top: 15px; " >366.2m</h3>
+                        <h3 style="margin-left: -196px; margin-top: 35px; color: rgb(139, 143, 143); font-size:15px ;">reputation</h3>
+                        <h3 style="margin-left: 67px; margin-top: 35px; color: rgb(139, 143, 143); font-size:15px ;">reached</h3>
+                        <h3 style="margin-top: 75px; margin-left: -190px;" >35,481 </h3>
+                        <h3 style="margin-top: 75px; margin-left: 77px;" >51</h3>
+                        <h3 style="margin-left: -155px; margin-top: 95px; color: rgb(139, 143, 143); font-size:15px ;">answers</h3>
+                        <h3 style="margin-left: 78px; margin-top: 95px; color: rgb(139, 143, 143); font-size:15px ;">questions</h3>
+                        <img src="Assets/cup.png" alt="Logo" style="width:20px; height: 18px; margin-top: 135px; margin-left: -199px;"  >
+                        <h3 style="margin-left: -20px; margin-top: 155px; color: rgb(139, 143, 143); font-size:15px ;">top 0.01% overall</h3>
+                    </div>
+                    <div class="aboutbox" >
+                        <h3>Author of </h3>
+                        <h3 style="margin-top:4px;" >Currently asoftware engineer at Google, London .</h3>
+                        <h3 style="margin-top:4px;" >Usually a Microsoft MVP(C#,2003-2010,2011-)</h3>
+                    </div>
+                    <div style="margin-top: -59px; margin-left: 375px;" >
+                    <a href=""><h3 style="font-size: 15px; font-weight: 400;">C# in Depth</h3></a>
+                    </div>
 
-                    <div class="listsettingright">
+                    <div>
+                        <h3 style="font-weight: 400; font-size: 14px; margin-left: 310px; margin-top:60px; color: rgb(65, 64, 64);" >sites:</h3>
+                    </div>
+                    <div>
+                        <ul style="margin-left:335px ;">
+                            <li>  
+                                <a href=""><h3 style="font-size: 15px; font-weight: 400; margin-top:20px ;">C# in Depth</h3></a>
+                            </li>
+                            <li>  
+                                <a href=""><h3 style="font-size: 15px; font-weight: 400;margin-top:10px ;">Codind blog</h3></a>
+                            </li>
+                            <li>  
+                                <a href=""><h3 style="font-size: 15px; font-weight: 400;margin-top:10px ;">C# articles</h3></a>
+                            </li>
+                            <li>  
+                                <a href=""><h3 style="font-size: 15px; font-weight: 400;margin-top:10px ;">Twitter updates (@jonskeet)</h3></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <h3 style="font-weight:100 ;font-size: 15px;color: rgb(65, 64, 64); margin-left: 305px; margin-top:15px ; " >Email:skeet@pobox.com(but please read </h3>
+                    <div style="margin-top: -17px; margin-left: 585px;" >
+                        <a href=""><h3 style="font-size: 15px; font-weight: 400;">my blog post on Stack Overflow-related emails</h3></a>
+                    </div>
+                    <h3 style="font-weight:100 ;font-size: 15px;color: rgb(65, 64, 64); margin-left: 898px; margin-top:-17px ; " >first)</h3>
+                    <div class="stats">
+                        <h3 style="font-size: large; font-weight: 100;margin-left: 12px; margin-top:-25px ; ">Collectives</h3>
+                    </div>         
+                    <div class="colltbox" >
+                        <img src="Assets/cloud.png" alt="Logo" style="width:30px; height: 30px; margin-top: 10px; margin-left: 4px; "  >
+
+                        <h3 style="font-weight: 400; margin-top: 5px; " >Google Cloud</h3>
+                    </div>
+                    <h3 style="font-weight: 400; margin-top: -39px; font-size: 10px;  margin-left: 55px;" >2021 Employee</h3>
+                    <div class="stats">
+                        <h3 style="font-size: large; font-weight: 100;margin-left: 12px; margin-top:55px ; ">Communities</h3>
+                    </div>
+                    <h3 style="margin-top:-85px; margin-left: 185px; font-size: 13px; font-weight: 100;">View all 
+                        <img src="Assets/linking.png" alt="Logo" style="width:15px; height: 15px; margin-top: 65px; margin-left: 4px; "  > 
+                    </h3>
+                    <div class="commubox" >
+                        <!-- BOX SETTING ONLY -->
+                    </div>
+                    
+                    <div style="margin-top:-175px; margin-left: 20px; " >
+                    <img src="Assets/meta.png" alt="Logo" style="width:20px;"  >
+                    </div> 
+
+                    <h3 style="font-weight: 100; margin-top:-20px ;font-size: 12px; color: blue; margin-left: 45px; ">Meta Stack Exchange</h3>
+                    <div style="margin-top:10px; margin-left: 24px; " >
+                        <img src="Assets/SuperUser.png" alt="Logo" style="width:14px;"  >
+                    </div>
+                    <h3 style="font-weight: 100; margin-top:-20px ;font-size: 12px; color: blue; margin-left: 45px; ">Super User</h3>
+                    <div style="margin-top:10px; margin-left: 19px; " >
+                        <img src="Assets/servfult.png" alt="Logo" style="width:29px;"  >
+                    </div>
+                    <h3 style="font-weight: 100; margin-top:-25px ;font-size: 12px; color: blue; margin-left: 45px; ">Server Fault</h3>
+                    <div style="margin-top:10px; margin-left: 14px; " >
+                        <img src="Assets/softeng.png" alt="Logo" style="width:37px; "  >
+                    </div>
+                    <h3 style="font-weight: 100; margin-top:-25px ;font-size: 12px; color: blue; margin-left: 45px; ">Software Engineering</h3>
+
+                    <div class="stats">
+                        <h3 style="font-size: large; font-weight: 100;margin-left: 12px; margin-top:100px ; "></h3>
+                    </div>
+                    <div style="margin-top:-250px; margin-left: 20px; " > 
+                    	<img src="Assets/icons8-stack-overflow-48.png" alt="Logo" style="width:20px; "  > 
+                    </div> 
+
+                    <h3 style="font-weight: 100; margin-top:-15px ;font-size: 12px; color: blue; margin-left: 45px;">Stack Overflow</h3>
+                    <h3 style="font-size: large; font-weight: 100; margin-left:300px ; margin-top: -60px; ">Badges</h3>
+                    <h3 style="font-size: 13px; font-weight: 100; margin-left:1000px ; margin-top: -20px; ">view all badges</h3>
+                    <div class="dropdown">
+                        <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                        </div>
+                    </div> 
+                    
+                    
+                    <div class="badgebox" >
+                        <div style="margin-left: 20px; margin-top: 10px;" >
+                            <img src="Assets/gbadge.png" alt="Logo" style="width:50px; "  > 
+        
+                        </div>
+                        <h3 style="margin-top: 20px; margin-left: 10px;">830</h3>
+                        <h3 style="margin-left: -31px; margin-top: 40px; font-weight: 400; font-size: small; " >gold badges</h3>
+                        <div class="butnbox">
+                            
+                                <div style="margin-top:70px ; margin-left: -125px;" >
+                                <button style="padding-left:5px; ">
+					  &#8226;
+                                delegates
+                                </button>
+                                </div>
+                                <div style="margin-left: -125px; margin-top:15px ;" > 
+                                <button style="padding-left:5px ;">
+                                 &#8226;   inheritance
+                                </button>
+                                </div> 
+                                <div style="margin-left: -125px;margin-top:15px">
+                                <button style="padding-left:5px ;">
+                                 &#8226;   casting
+                                </button>
+                                </div>
+                            
+                        </div>
 
                     </div>
-                </div>
-                <div class="listsection" >
-                    <div class="section section__selected">
-                        <button class="profile">
-                            <h3>Profile</h3>
-                        </button>
+                    <div class="silbdgbox" >
+                        <div style="margin-left: 20px; margin-top: 10px;" >
+                            <img src="Assets/sbadge.png" alt="Logo" style="width:50px; "  > 
+        
+                        </div>
+                        <h3 style="margin-top: 20px; margin-left: 10px;">8,964</h3>
+                        <h3 style="margin-left: -47px; margin-top: 40px; font-weight: 400; font-size: small; " >silver badges</h3>
+                        <div class="butn2box" >
+                            
+                                <div style="margin-top:70px ; margin-left: -125px;" >
+                                <button style="padding-left:5px; ">
+                                 &#8226;   c#-3.0
+                                </button>
+                                </div>
+                                <div style="margin-left: -125px; margin-top:15px ;" > 
+                                <button style="padding-left:5px ;">
+                                &#8226;    .net-2.0
+                                </button>
+                                </div> 
+                                <div style="margin-left: -125px;margin-top:15px">
+                                <button style="padding-left:5px ;">
+                                  &#8226;  coding-style
+                                </button>
+                                </div>
+                            
+                        </div>
+
                     </div>
-                    <div class="section">
-                        <button class="about">
-                            <h3>Activity</h3>
-                        </button>
+                    <div class="brobdgbox" >
+                        <div style="margin-left: 20px; margin-top: 10px;" >
+                            <img src="Assets/bbadge.png" alt="Logo" style="width:50px; "  > 
+        
+                        </div>
+                        <h3 style="margin-top: 20px; margin-left: 10px;">9,077</h3>
+                        <h3 style="margin-left: -47px; margin-top: 40px; font-weight: 400; font-size: small; " >bronze badges</h3>
+                        <div class="butn3box" >
+                            
+                                <div style="margin-top:70px ; margin-left: -125px;" >
+                                <button style="padding-left:5px; ">
+                                  &#8226;  generic-list
+                                </button>
+                                </div>
+                                <div style="margin-left: -125px; margin-top:15px ;" > 
+                                <button style="padding-left:5px ;">
+                                 &#8226;   encapsulation
+                                </button>
+                                </div> 
+                                <div style="margin-left: -125px;margin-top:15px">
+                                <button style="padding-left:5px ;">
+                                  &#8226;  keyword
+                                </button>
+                                </div>
+                            
+                        </div>
+
                     </div>
-                </div>
-			<h2 style="margin-top:20px">Stats<span class="abspace"></span>About</h2>
-		<div class="statuser">
-                <div class="stats">
-				<span class="numbers">1,350,175<span class="space"></span>366.2m</span>
-				<span class="stattext">reputation<span class="space"></span>reached</span>
-				<span class="numbers">35,481<span class="space"></span>51</span>
-				<span class="stattext">answers<span class="space"></span>questions</span>			
-				<span class="material-icons" style="margin-left:15px; margin-bottom:10px;">emoji_events</span>
-				<span class="stattext">top <b>0.01%</b> overall</span>
-			</div>
+                    <h3 style="margin-left: 300px; margin-top: 20px; font-weight:100 ;" >Top tags</h3>
+                    <h3 style="font-size: 13px; font-weight: 100; margin-left:1000px ; margin-top: -20px; ">view all tags</h3>
 
-			<div class="aboutuser">
-				<p class="info">Author of <a href="https://www.manning.com/books/c-sharp-in-depth-fourth-edition?a_aid=jonskeet&a_bid=66d590c3">C# in depth</a>.</p>
-				<p class="info">Currently a software engineer at Google, London.</p>
-				<p class="info">Usually a Microsoft MVP (C#, 2003-2010, 2011-)</p>
-				<p class="info"></p>
-				<p class="info">Sites:</p>
-				<p class="info"></p>
-				<ul>
-  					<li class="info"><a href="https://www.manning.com/books/c-sharp-in-depth-fourth-edition?a_aid=jonskeet&a_bid=66d590c3">C# in depth</a></li>
-  					<li class="info"><a href="https://codeblog.jonskeet.uk/">Coding blog</a></li>
-  					<li class="info"><a href="http://jonskeet.uk/csharp">C# articles</a></li>
-  					<li class="info"><a href="http://twitter.com/jonskeet">Twitter updates(@jonskeet)</a></li>
-				</ul>
-				<p class="info">Email: skeet@pobox.com (but please read <a href="https://codeblog.jonskeet.uk/2012/08/22/stack-overflow-and-personal-emails/">my blogpost on Stack Overflow-related emails</a> first)</p>
-			</div>
-		</div>
+                    <div class="toptags" >
+                        
+                            <button>
+                                c# &#8226;
+                            </button>
+                        <h3 style="margin-top: 12px; margin-left:250px ;" >256,248</h3>
+                        <h3  style="margin-top: 16px; margin-left:3px; font-size: small; color: rgb(96, 95, 93); font-weight:100 ;">score</h3>
+                        <h3 style=" margin-top:12px;margin-left: 65px; ">19,829</h3>
+                        <h3  style="margin-top: 16px; margin-left:3px; font-size: small; color: rgb(96, 95, 93); font-weight:100 ;">posts</h3>
+                        <h3 style=" margin-top: 12px;margin-left: 95px;">56</h3>
+                        <h3  style="margin-top: 16px; margin-left:3px; font-size: small; color: rgb(96, 95, 93); font-weight:100 ;">posts %</h3>
 
+                    </div>
+                    <div class="toptagm" >
+                        
+                            <button>
+                                java &#8226;
+                            </button>
+                        
+                        <h3 style="margin-top: 12px; margin-left:240px ;" >154,370</h3>
+                        <h3  style="margin-top: 16px; margin-left:3px; font-size: small; color: rgb(96, 95, 93); font-weight:100 ;">score</h3>
+                        <h3 style=" margin-top:12px;margin-left: 65px; ">10,569</h3>
+                        <h3  style="margin-top: 16px; margin-left:3px; font-size: small; color: rgb(96, 95, 93); font-weight:100 ;">posts</h3>
+                        <h3 style=" margin-top: 12px;margin-left: 95px;">30</h3>
+                        <h3  style="margin-top: 16px; margin-left:3px; font-size: small; color: rgb(96, 95, 93); font-weight:100 ;">posts %</h3>
 
-			<h2 style="margin-top:20px">Communities<span class="commspace"></span>Badge</h2>
-		<div class="commbadge">
-		<div class="community">
-			<img
-				src="https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico?v=ec617d715196"
-				alt="stackicon"
-				style="height:24px;"
-			/>
-			<span class="commopt">Stack Overflow</span>
-			<img
-				src="assets/meta.png"
-				alt="metaicon"
-				style="height:24px;"
-			/>
-			<span class="commopt">Meta Stack Exchange</span>
-		</div>
-		<div class="badges">
-			<div class="gold">
-				<img
-					src="assets/gbadge.png"
-					alt="gbadge"
-					style="width: 50px; height:50px; padding-left:10px;"
-				/>
-				<h3 style="padding-top:10px;"><span class="badgespace"></span>830</h3>
-				<span class="badgedet"> gold badges</span>
-				<button class="golditem">delegates</button>
-			</div>
-			<div class="silver">
-				<img
-					src="assets/silver.jpeg"
-					alt="gbadge"
-					style="width: 50px; height:50px; padding-left:10px;"
-				/>
-				<h3 style="padding-top:10px;"><span class="badgespace"></span>8965</h3>
-				<span class="badgedet"> silver badges</span>
-				<span class="silveritem"></span>
-			</div>
-			<div class="bronze">
-				<img
-					src="assets/gbadge.png"
-					alt="gbadge"
-					style="width: 50px; height:50px; padding-left:10px;"
-				/>
-				<h3 style="padding-top:10px;"><span class="badgespace"></span>9077</h3>
-				<span class="badgedet"> bronze badges</span>
-				<span class="bronzeitem"></span>
-			</div>
-		</div>
-		</div>
-	</div>
-</body>
-</html>
+                    </div>
+                    <div class="toptagm" >
+                        
+                            <button>
+                                .net &#8226;
+                            </button>
+                        
+                        <h3 style="margin-top: 12px; margin-left:250px ;" >88,907</h3>
+                        <h3  style="margin-top: 16px; margin-left:3px; font-size: small; color: rgb(96, 95, 93); font-weight:100 ;">score</h3>
+                        <h3 style=" margin-top:12px;margin-left: 79px; ">5,609</h3>
+                        <h3  style="margin-top: 16px; margin-left:3px; font-size: small; color: rgb(96, 95, 93); font-weight:100 ;">posts</h3>
+                        <h3 style=" margin-top: 12px;margin-left: 95px;">16</h3>
+                        <h3  style="margin-top: 16px; margin-left:3px; font-size: small; color: rgb(96, 95, 93); font-weight:100 ;">posts %</h3>
 
+                    </div>
+                    <div class="toptagm" >
+                        
+                            <button >
+                                linq &#8226;
+                            </button>
+                        
+                        <h3 style="margin-top: 12px; margin-left:250px ;" >37,069</h3>
+                        <h3  style="margin-top: 16px; margin-left:3px; font-size: small; color: rgb(96, 95, 93); font-weight:100 ;">score</h3>
+                        <h3 style=" margin-top:12px;margin-left: 81px; ">2,993</h3>
+                        <h3  style="margin-top: 16px; margin-left:3px; font-size: small; color: rgb(96, 95, 93); font-weight:100 ;">posts</h3>
+                        <h3 style=" margin-top: 12px;margin-left: 105px;">8</h3>
+                        <h3  style="margin-top: 16px; margin-left:3px; font-size: small; color: rgb(96, 95, 93); font-weight:100;">posts %</h3>
 
+                    </div>
+                    <div class="toptagm" >
+                        
+                            <button >
+                                string &#8226;
+                            </button>
+                        
+                        <h3 style="margin-top: 12px; margin-left:240px ;" >23,990</h3>
+                        <h3  style="margin-top: 16px; margin-left:3px; font-size: small; color: rgb(96, 95, 93); font-weight:100 ;">score</h3>
+                        <h3 style=" margin-top:12px;margin-left: 81px; ">1,008</h3>
+                        <h3  style="margin-top: 16px; margin-left:3px; font-size: small; color: rgb(96, 95, 93); font-weight:100 ;">posts</h3>
+                        <h3 style=" margin-top: 12px;margin-left: 105px;">3</h3>
+                        <h3  style="margin-top: 16px; margin-left:3px; font-size: small; color: rgb(96, 95, 93); font-weight:100 ;">posts %</h3>
 
+                    </div>
+                    <div class="toptagl" >
+                        
+                            <button >
+                                generics &#8226;
+                            </button>
+                        
+                        <h3 style="margin-top: 12px; margin-left:220px ;" >21,564</h3>
+                        <h3  style="margin-top: 16px; margin-left:3px; font-size: small; color: rgb(96, 95, 93); font-weight:100 ;">score</h3>
+                        <h3 style=" margin-top:12px;margin-left: 85px; ">1,284</h3>
+                        <h3  style="margin-top: 16px; margin-left:3px; font-size: small; color: rgb(96, 95, 93); font-weight:100 ;">posts</h3>
+                        <h3 style=" margin-top: 12px;margin-left: 104px;">4</h3>
+                        <h3  style="margin-top: 16px; margin-left:3px; font-size: small; color: rgb(96, 95, 93); font-weight:100 ;">posts %</h3>
 
-
+                    </div>
+			  <h3>Top posts</h3>
+		    	  <h4>View all question, posts and article</h4>  
+                </div>            
+            </div>    
+        </body>
+    </html>
