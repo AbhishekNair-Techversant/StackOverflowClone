@@ -19,12 +19,12 @@
     opacity: 1;
 }
 
-.header__top {
+.headerTop {
+    border: 1px solid #f48225;
     background-color: #f48225;
-    height: 2px;
 }
 
-.header__rest {
+.headerRest {
     display: flex;
     align-items: center;
     background-color: #f8f9f9;
@@ -32,15 +32,73 @@
     padding-right: 150px;
 }
 
-.header__rest img {
+.logoImage img {
     width: 150px;
-    height: auto;
-    background-color: white;
+}
+
+.headerRest img {
+    width: 24px;
+    background-color: #f8f9f9;
     padding: 1px;
     padding-right: 5px;
     padding-left: 5px;
 }
-.header__rest span {
+
+.dropButton {
+    background-color: transparent;
+    color: black;
+    padding: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.dropdownContent img {
+    width: 16px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.imageAnchor {
+    display: flex;
+}
+
+.dropdownContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownContent a:hover {
+    background-color: white;
+}
+
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+
+.dropdown:hover .dropButton {
+    background-color: #e3e6e8;
+}
+
+.logoImage img {
+    width: 150px;
+}
+
+.headerRest span {
     padding: 10px;
     cursor: pointer;
     background-color: #f8f9f9;
@@ -63,52 +121,39 @@
     opacity: 1;
 }
 
-.header__rest img:hover {
+.headerRest img:hover {
     border-style: hidden;
     background-color: #e3e6e8;
 }
 
-.pfpage {
+.profilePage {
     display: flex;
     align-items: center;
+    margin-left: 12px;
+    margin-right: 12px;
     background-color: #f8f9f9;
     border-style: hidden;
 }
 
-.pfpage img {
+.profilePage img {
     width: 24px;
-    height: 24px;
 }
 
-.pfpage p {
+.profilePage p {
     text-align: justify;
 }
 
-.pfpage:hover {
+.profilePage:hover {
     cursor: pointer;
     background-color: #e3e6e8;
     border-style: hidden;
 }
 
-.header__rest img {
-    margin-left: 5px;
-    cursor: pointer;
-    background-color: #f8f9f9;
-    padding: 5px;
+.dropdownContent img {
+    width: 20px;
 }
 
-.material-icons {
-    color: gray;
-    background-color: #f8f9f9;
-}
-
-.material-icons:hover {
-    cursor: pointer;
-    border-style: hidden;
-    background-color: #e3e6e8;
-}
-
-.header__search {
+.headerSearch {
     display: flex;
     flex: 1;
     align-items: center;
@@ -118,18 +163,17 @@
     border-width: 2px;
     border-radius: 5px;
     padding: 1px;
-    line-height: 10px;
     color: white;
     background-color: white;
-    height: 30px;
 }
 
-.header__search .material-icons{
-    padding:0px;
-    background-color:transparent;
+.headerSearch img {
+    width: 22px;
+    padding: 0px;
+    background-color: transparent;
 }
 
-.header__search input {
+.headerSearch input {
     border: none;
     width: 100%;
     padding: 10px;
@@ -140,18 +184,18 @@
     padding: 1px 1px;
 }
 
-.header__search:active {
+.headerSearch:active {
     border-color: #0074cc;
 }
 
-.header__search:focus {
+.headerSearch:focus {
     border: 3px solid #0074cc;
 }
 
 .sidebar {
     flex: 0.3;
-    max-width: 150px;
-    padding-left: 150px;
+    max-width: 164px;
+    padding-left: 128px;
     font-size: 12px;
     border-right: 1px solid #818181;
 }
@@ -159,7 +203,6 @@
 .sidebarOption {
     display: flex;
     align-items: right;
-    height: 25px;
     padding: 0 10px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -167,13 +210,14 @@
     color: #818181;
 }
 
-.sidebarOption .material-icons {
+.sidebarOption img {
     padding: 5px;
+    width: 16px;
 }
 
-.sidebarOption:hover .material-icons,
-.sidebarOption__active,
-.sidebarOption__active .material-icons {
+.sidebarOption:hover img,
+.sidebarOptionActive,
+.sidebarOptionActive img {
     background-color: #f1f2f3;
     color: black;
     font-weight: 800;
@@ -213,51 +257,54 @@
 }
 
 .collectives {
-    padding-right: 58px;
+    padding-right: 52px;
 }
 
 .teams {
-    padding-right: 80px;
+    padding-right: 85px;
 }
 
 .expcollective {
     padding-top: 5px;
 }
 
-.sidebarOption__active {
+.sidebarOptionActive {
     border-right: 3px solid #f48225;
 }
 
 /* bigbody */
-.main__body {
+.mainBody {
     display: flex;
 }
 
 body {
     overflow-x: hidden;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: apple-system, BlinkMacSystemFont, "Segoe UI Adjusted",
+        "Segoe UI", "Liberation Sans", sans-serif;
 }
 
-/* listsetting */
+/* restBody */
 
-.listhead {
+.restBodyHead {
     flex: 1;
     padding-left: 15px;
 }
-.listsetting {
+.restBody {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px whitesmoke;
     background-color: white;
     z-index: 999;
     padding: 8px;
+    padding-right: 200px;
 }
 
-.listsettingleft {
+.restBodyLeft {
+    margin-right: 10px;
     box-shadow: 1px 0px 5px 0px rgb(220, 225, 228);
 }
 
-.listsettingleft img {
+.restBodyLeft img {
     width: 128px;
 }
 
@@ -265,25 +312,25 @@ body {
     width: 400px;
     padding-right: 100px;
     /* margin: 20px; */
-    margin-right: 300px;
+    margin-right: auto;
+    padding-left: 10px;
 }
 .name {
     margin-top: 15px;
     /* margin-right: 100px; */
     padding-right: 100px;
-    font-weight: 540;
+    font-weight: 400;
     font-size: xx-large;
     /* padding-left: 15px; */
 }
 
-.cakedes {
+.cakeDesc {
     font-size: 12px;
     font-weight: 400;
     margin-right: 20px;
     color: gray;
     padding-left: 5px;
     margin-right: 10px;
-    margin-top: 8px;
 }
 
 .emoji {
@@ -292,20 +339,24 @@ body {
     margin-bottom: 10px;
 }
 
-.namebodyopt {
+.nameBodyOption {
     display: flex;
-    align-items: 40px;
-    height: 40px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     cursor: pointer;
     color: grey;
     margin-top: 5px;
+    padding-bottom: 12px;
 }
-.locbodyopt {
+
+.nameBodyOption img {
+    width: 18px;
+    aspect-ratio: 1 / 1;
+}
+
+.localBodyOption {
     display: flex;
     align-items: 40px;
-    height: 40px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     cursor: pointer;
@@ -313,15 +364,14 @@ body {
     margin-left: 1px;
 }
 
-.profdetails {
+.profDetails {
     padding: 5px;
     color: #818181;
 }
 
-.locbodyopt img {
-    width: 20px;
-    height: 20px;
-
+.localBodyOption img {
+    width: 18px;
+    aspect-ratio: 1 / 1;
 }
 
 .section {
@@ -329,7 +379,7 @@ body {
     cursor: pointer;
 }
 
-.listsection {
+.listSection {
     display: flex;
 }
 
@@ -409,7 +459,6 @@ body {
 .numbers {
     display: flex;
     align-items: 40px;
-    height: 40px;
     padding: 0 5px;
     padding-left: 10px;
     border-top-right-radius: 20px;
@@ -419,47 +468,50 @@ body {
     margin-top: 10px;
 }
 
-.statnum,
-.statext {
+.statNum,
+.statText {
     display: flex;
 }
 
-.statext {
+.statText {
     font-size: 13px;
     color: #818181;
 }
 
-.statnumleft {
+.stats img {
+    padding-left: 10px;
+    width: 24px;
+}
+
+.statNumLeft {
     padding: 7px;
     padding-top: 10px;
 }
 
-.textnumleft {
+.textNumLeft {
     padding: 7px;
     padding-top: 3px;
     padding-bottom: 20px;
 }
 
-.statnumright {
+.statNumRight {
     padding: 7px;
     padding-top: 10px;
     padding-left: 40px;
 }
 
-.textnumright {
+.textNumRight {
     padding: 7px;
     padding-left: 40px;
     padding-top: 3px;
     padding-bottom: 20px;
 }
 
-.stattext {
+.statTextPercent {
     display: flex;
     font-weight: 100;
     font-size: 15px;
     align-items: 40px;
-    height: 40px;
-    padding: 5px 5px;
     color: #818181;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -467,21 +519,17 @@ body {
     margin-left: 10px;
 }
 
-.statnumber {
+.statNumber {
     padding: 5px;
 }
 
-.stattext b {
+.statTextPercent b {
     margin-left: 10px;
     margin-right: 10px;
 }
 
 .space {
     padding-right: 40px;
-}
-
-.orange {
-    color: #f48225;
 }
 
 .community {
@@ -494,23 +542,23 @@ body {
 }
 
 .community img {
+    padding-top: 2px;
     width: 20px;
-    height: 20px;
 }
 
-.stathead {
+.statHead {
     margin-top: 20px;
     margin-left: 10px;
     font-size: 21px;
     margin-bottom: 10px;
 }
 
-.statuser {
+.statUser {
     display: flex;
     margin-top: 20px;
 }
 
-.abspace {
+.aboutSpace {
     padding-left: 250px;
 }
 
@@ -523,7 +571,7 @@ a:visited {
     color: #0063bf;
 }
 
-.aboutuser {
+.aboutUser {
 }
 
 .info {
@@ -534,13 +582,12 @@ a:visited {
     padding-top: 10px;
 }
 
-.collhead {
+.collectiveHead {
     margin-bottom: 10px;
     font-size: large;
-    font-weight: 100;
 }
 
-.collbox {
+.collectiveBox {
     width: 200px;
     display: flex;
     border: 1px solid #818181;
@@ -548,12 +595,12 @@ a:visited {
     font-size: 13px;
 }
 
-.colltext {
+.collectiveText {
     padding-top: 10px;
     padding-left: 15px;
 }
 
-.badgenum {
+.badgeNumber {
     font-size: 21px;
     font-weight: bold;
 }
@@ -566,11 +613,11 @@ a:visited {
     border-radius: 5px;
 }
 
-.commbadge {
+.communityBadge {
     display: flex;
 }
 
-.commspace {
+.communitySpace {
     padding-left: 180px;
 }
 
@@ -583,30 +630,30 @@ a:visited {
     display: flex;
 }
 
-.goldsub {
+.goldSub {
     margin-left: 7px;
     padding-top: 3px;
 }
 
-.badgetext {
+.badgeText {
     font-size: small;
 }
 
-.buttonbadge {
-    display:flex;
-    width:200px;
+.buttonBadge {
+    display: flex;
+    width: 200px;
     margin-left: 7px;
     margin-top: 3px;
     margin-bottom: 3px;
-    text-align:right;
+    text-align: right;
 }
 
-.badgespace {
+.badgeSpace {
     margin-right: 20px;
     font-size: 10px;
 }
 
-.buttonbadge button {
+.buttonBadge button {
     padding: 5px;
     cursor: pointer;
     align-items: center;
@@ -619,10 +666,10 @@ a:visited {
     font-size: 11px;
 }
 
-.commline {
-    padding-bottom: 7px;
+.communityLine {
+    padding-bottom: 3px;
 }
 
-.commline img {
+.communityLine img {
     text-align: justify;
 }
