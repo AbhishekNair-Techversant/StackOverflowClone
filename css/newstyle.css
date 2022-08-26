@@ -216,9 +216,8 @@
 }
 
 .sidebarOption img {
-    padding: 5px;
     padding-top: 10px;
-    width: 12px;
+    width: 22px;
 }
 
 
@@ -250,6 +249,16 @@
 
 .questionImg img{
 	padding:5px;
+	padding-top:0px;
+}
+
+.infoImg{
+	padding-top:10px;	
+}
+
+.infoImg img{
+	padding-top:0px;
+	width: 12px;	
 }
 
 .questions,
@@ -262,6 +271,14 @@
     padding-right: 2px;
 }
 
+.collectiveSpace{
+	padding-right:60px;	
+}
+
+.teamSpace{
+	padding-right:90px;
+}
+
 .tags,
 .users,
 .companies {
@@ -270,14 +287,11 @@
 
 .collectives {
     font-size: 11px;
-    padding-top: 10px;
-    padding-right: 62px;
+    
 }
 
 .teams {
     font-size: 11px;
-    padding-top: 10px;
-    padding-right: 85px;
 }
 
 .expcollective {
@@ -734,4 +748,12 @@ a:visited {
 
 .tagStart{
 	display:flex;	
+}
+
+.table{
+	border: 1px solid black;
+	border-collapse:collapse;
+}
+.tr{
+	border:1px solid black;
 }
