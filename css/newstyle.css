@@ -5,8 +5,6 @@
 }
 
 * Header */ .header {
-	position: sticky;
-	top: 0;
 	align-items: center;
 	cursor: pointer;
 	justify-content: space-between;
@@ -192,8 +190,6 @@
 }
 
 .sidebar {
-	position: sticky;
-	top: 0;
 	flex: 0.3;
 	max-width: 164px;
 	padding-left: 128px;
