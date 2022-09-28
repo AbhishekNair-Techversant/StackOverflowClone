@@ -4,7 +4,7 @@
 
 }
 
-* Header */ .header {
+.header {
 	align-items: center;
 	cursor: pointer;
 	justify-content: space-between;
@@ -199,7 +199,7 @@
 
 .sidebarOption {
 	display: flex;
-	align-items: right;
+	align-items: end;
 	padding: 0 10px;
 	padding-top: 5px;
 	padding-bottom: 10px;
@@ -381,7 +381,6 @@ body {
 
 .localBodyOption {
 	display: flex;
-	align-items: 40px;
 	border-top-right-radius: 20px;
 	border-bottom-left-radius: 20px;
 	cursor: pointer;
@@ -483,7 +482,6 @@ body {
 
 .numbers {
 	display: flex;
-	align-items: 40px;
 	padding: 0 5px;
 	padding-left: 10px;
 	border-top-right-radius: 20px;
@@ -541,7 +539,6 @@ body {
 	display: flex;
 	font-weight: 100;
 	font-size: 15px;
-	align-items: 40px;
 	color: #818181;
 	border-top-right-radius: 20px;
 	border-bottom-left-radius: 20px;
