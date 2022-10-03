@@ -4,6 +4,40 @@
 
 }
 
+.dFlex{
+	display: flex;
+}
+
+.cursor{
+	cursor: pointer;
+}
+
+.alignItemsCenter{
+	align-items: center;
+}
+
+.justifyContentSpaceBetween{
+	justify-content: space-between;	
+}
+
+.borderBottom{
+	border-bottom: 1px solid whitesmoke;
+}
+
+.bgColorF8F9F9{
+	background-color: #f8f9f9;
+}
+
+.zIndex{
+	z-index: 10;
+}
+
+.width150{
+	width: 150px;
+}
+
+
+
 .header {
 	align-items: center;
 	cursor: pointer;
