@@ -56,11 +56,6 @@
 	opacity: 1;
 }
 
-.headerTop {
-	border: 1px solid #f48225;
-	background-color: #f48225;
-}
-
 .headerRest {
 	display: flex;
 	align-items: center;
@@ -68,6 +63,7 @@
 	padding-left: 35px;
 	padding-right: 50px;
 	box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
+	border-top: 3px solid #f48225;
 }
 
 .logoImage img {
