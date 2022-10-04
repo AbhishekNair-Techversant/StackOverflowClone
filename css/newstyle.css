@@ -39,12 +39,13 @@
 
 
 .header {
+	position: sticky;
+	top: 0;
 	align-items: center;
 	cursor: pointer;
 	justify-content: space-between;
 	border-bottom: 1px solid whitesmoke;
 	background-color: #f8f9f9;
-	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 	z-index: 1;
 
 }
@@ -64,8 +65,8 @@
 	display: flex;
 	align-items: center;
 	background-color: #f8f9f9;
-	padding-left: 128px;
-	padding-right: 150px;
+	padding-left: 35px;
+	padding-right: 50px;
 	box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
 }
 
@@ -206,7 +207,7 @@
 
 .headerSearch input {
 	border: none;
-	width: 500px;
+	width: 600px;
 	padding: 10px;
 	outline: none;
 	font-size: medium;
@@ -224,9 +225,12 @@
 }
 
 .sidebar {
+	position: sticky;
+    	top: 50px;
+    	height: 500px;
 	flex: 0.3;
 	max-width: 164px;
-	padding-left: 128px;
+	padding-left: 35px;
 	font-size: 12px;
 	border-right: 1px solid rgba(129, 129, 129, 0.2);
 }
