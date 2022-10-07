@@ -387,6 +387,7 @@ body {
 	margin-left: 10px;
 	color: rgb(253, 250, 250);
 	padding: 7px;
+	border-radius: 20px;
 	background-color: #f48225;
 	display: flex;
 	align-items: center;
@@ -472,11 +473,11 @@ body {
 }
 
 .statNumLeft {
-	padding: 10px 7px 0px 10px;
+	padding: 10px 20px 0px 20px;
 }
 
 .textNumLeft {
-	padding: 0 7px 20px 10px;
+	padding: 0 20px 20px 20px;
 }
 
 .statNumRight {
@@ -484,7 +485,7 @@ body {
 }
 
 .textNumRight {
-	padding: 40px 7px 0 20px;
+	padding: 0px 7px 20px 10px;
 }
 
 .statTextPercent {
